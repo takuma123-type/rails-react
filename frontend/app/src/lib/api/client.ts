@@ -12,7 +12,7 @@ const options = {
 }
 
 const client = applyCaseMiddleware(axios.create({
-  baseURL: "http://192.168.224.132:3001/api/v1",
+  baseURL: "http://localhost:3001/api/v1",
   headers: {
     Authorization: Cookies.get("_authorization") || ""
   }

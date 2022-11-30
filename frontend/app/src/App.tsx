@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext } from "react"
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
 
-import CommonLayout from "components/layouts/CommonLayout"
+import CommonLayout from "components/organisms/CommonLayout"
 import Home from "components/pages/Home"
 import SignUp from "components/pages/SignUp"
 import SignIn from "components/pages/SignIn"
@@ -9,7 +9,7 @@ import SignIn from "components/pages/SignIn"
 import { getCurrentUser } from "lib/api/auth"
 import { User } from "interfaces/index"
 
-// グローバルで扱う変数・関数
+// グローバルでß扱う変数・関数
 export const AuthContext = createContext({} as {
   loading: boolean
   setLoading: React.Dispatch<React.SetStateAction<boolean>>
